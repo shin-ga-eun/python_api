@@ -42,7 +42,7 @@ print("[responBody]")
 
 data = str(response.data,"utf-8") #utf-8로 인코딩해서 받음
 test = json.loads(data) #json파일을 딕셔너리로 변환
-sentence = test['return_object']['sentence'] #분석결과변수 sentence
+sentence = test['return_object']['sentence'] #분석결과변수 리스트
 
 num = len(sentence)
 
@@ -64,11 +64,9 @@ for i in range(0,num):
 
 
 
-#result = dict(sentence)
-
-#결과값을 txt파일로 저장
-#with open('morp.json','w', encoding="utf-8") as make_file:
-#   json.dump(result, make_file, ensure_ascii=False)
+#결과값을 json파일로 저장
+with open('morp.json','w', encoding="utf-8") as make_file:
+   json.dump(test, make_file, ensure_ascii=False)
 
 
 
