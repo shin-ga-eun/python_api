@@ -6,17 +6,10 @@ from collections import OrderedDict
 from pprint import pprint 
 import Analysis
 
-# 형태소 분석 : “morp”,
-# 어휘의미 분석 (동음이의어 분석) : “wsd”
-# 어휘의미 분석 (다의어 분석) : “wsd_poly”
-# 개체명 인식 : “ner”
-# 의존 구문 분석 : “dparse”
-# 의미역 인식 : “srl”
- 
 openApiURL = "http://aiopen.etri.re.kr:8000/WiseNLU" 
 accessKey = "9cf5e5b7-55b3-4369-9921-726d59b3b6e5" #인증키
-
-(text, analysisCode) = Analysis.fileInput()
+text = Analysis.textInput()
+analysisCode = "ner"
 
 requestJson = {
     "access_key": accessKey,
@@ -40,6 +33,7 @@ print("[responseCode] " + str(response.status))
 print("[responBody]")
 
 data = str(response.data,"utf-8") #utf-8로 인코딩해서 받음
+
 test = json.loads(data) #json파일을 딕셔너리로 변환
 sentence = test['return_object']['sentence'] #분석결과변수 리스트
 
@@ -63,6 +57,7 @@ for i in range(0,num):
 
 
 Analysis.jsonOutput(test)
+Analysis.TextOutput(test)
 
 
 
