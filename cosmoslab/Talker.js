@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Talker extends Component {
+export default class Talker extends Component {
     render() {
         return (
             <div>
@@ -9,4 +9,3 @@ class Talker extends Component {
         )
     }
 }
-export default Talker;
