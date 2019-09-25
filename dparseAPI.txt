@@ -1,0 +1,1 @@
+"엑소브레인은 + NP_SBJ / 내 + NP_MOD / 몸 + NP / 바깥에 + NP_AJT / 있는 + VP_MOD / 인공 + NP / 두뇌라는 + VNP_MOD / 뜻으로, + NP_AJT / 세계 + NP / 최고인공지능 + NP / 기술 + NP / 선도라는 + VNP_MOD / 비전을 + NP_OBJ / 달성하기 + VP_OBJ / 위한 + VP_MOD / 과학기술정보통신부 + NP / 소프트웨어 + NP / 분야의 + NP_MOD / 국가 + NP / 혁신기술 + NP / 개발형 + NP / 연구개발 + NP"

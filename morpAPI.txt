@@ -1,1 +1,1 @@
-"안녕""하""세요"".""여기""는""코스모스랩실""이""만나""아서""반갑""습니다"
+"엑소브레인 + NNP/ 은 + NNP/ 나 + NNP/ 의 + NNP/ 몸 + NNP/ 바깥 + NNP/ 에 + NNP/ 있 + NNP/ 는 + NNP/ 인공 + NNP/ 두뇌 + NNP/ 이 + NNP/ 라는 + NNP/ 뜻 + NNP/ 으로 + NNP/ , + NNP/ 세계 + NNP/ 최고 + NNP/ 인공 + NNP/ 지능 + NNP/ 기술 + NNP/ 선도 + NNP/ 이 + NNP/ 라는 + NNP/ 비전 + NNP/ 을 + NNP/ 달성 + NNP/ 하 + NNP/ 기 + NNP/ 위하 + NNP/ ㄴ + NNP/ 과학 + NNP/ 기술 + NNP/ 정보 + NNP/ 통신 + NNP/ 부 + NNP/ 소프트웨어 + NNP/ 분야 + NNP/ 의 + NNP/ 국가 + NNP/ 혁신 + NNP/ 기술 + NNP/ 개발 + NNP/ 형 + NNP/ 연구 + NNP/ 개발 + NNP/ 과제 + NNP/ 이 + NNP/ 다 + NNP"
