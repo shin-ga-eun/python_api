@@ -83,7 +83,7 @@ class morpAPI:
             for i in range(strnum):
               for j in range(morpnum-1):
                 lemma = self.result[i]['morp'][j]['lemma'] 
-                type = self.result[0]['morp'][0]['type']
+                type = self.result[i]['morp'][j]['type']
                 json.dump(lemma+" + "+type, make_file,ensure_ascii=False)
         '''
         필요한 json 파일 뽑아서 text 형식으로 저장하기

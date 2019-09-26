@@ -1,14 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
 
-function App() {
-  return (
-    <div>
+import TalkerList from './TalkerList';
 
-      
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <TalkerList/>
+      </div>
+    )
+  }
 }
-
 export default App;
