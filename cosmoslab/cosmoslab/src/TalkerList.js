@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+
 import TalkerForm from './TalkerForm';
 import TalkerItem from './TalkerItem';
 
@@ -51,14 +54,24 @@ class TalkerList extends Component {
 
         return (
             <div>
+                <Grid 
+                    container
+                    direction="column"
+                    justify="space-between"
+                    >
+
+                <Typography variant="h4">분석창</Typography>
+               
                 <TalkerForm selectedBoard={selectedBoard} onSaveData={this.handleSaveData}/>
 
-                
+                <Typography variant="h4">분석내용</Typography>
+
                     {
                         boards.map(row =>
                             (<TalkerItem key={row.brdno} row={row} onSelectRow={this.handleSelectRow} />)
                         )
                     }
+                </Grid>
              
             </div>
         );

@@ -37,7 +37,7 @@ class TalkerItem extends Component {
       return(
           <div>
             {/* 발화자 발화내용 start */}
-             <Paper className = {classes.root}>
+             <Paper className = {classes.root} elevation ={3} style={{marginTop: 10, }}>
 
                 <Grid container spacing = {1} item sm={12} >  
                    
@@ -57,7 +57,7 @@ class TalkerItem extends Component {
                             label="발화인"
                             value={this.props.row.talker}
                             className={classes.textField}
-                            style={{ margin: 8 ,}}
+                            style={{ margin: 8, marginLeft: 20}}
                             margin="normal"
                             variant="filled"
                             InputProps={{
@@ -68,7 +68,7 @@ class TalkerItem extends Component {
                             />
                       </Grid> 
                   
-                  <Grid item sm ={9} >
+                  <Grid item sm ={8}>
                     <Grid
                       container
                       direction="column"
@@ -82,7 +82,7 @@ class TalkerItem extends Component {
                         value={this.props.row.text}
                         className={classes.textField}
                         style={{ margin: 8 }}
-                        fullWidth
+                        // fullWidth
                         margin="normal"
                         variant="filled"
                         InputProps={{
@@ -107,6 +107,8 @@ class TalkerItem extends Component {
                       {/* 분석태그 end */}
                       </Grid>
                     
+                    <Grid item sm={1}></Grid>
+
                 </Grid>
               </Paper>
             {/* 발화자 발화내용 end */}

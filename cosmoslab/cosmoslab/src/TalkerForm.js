@@ -97,7 +97,7 @@ class Talker extends Component {
       return (
           <form onSubmit={this.handleSubmit}>
         
-          <Paper className = {classes.root}>
+          <Paper className = {classes.root} style={{marginTop: 20, marginBottom: 15,}}>
               <Grid container spacing = {3} item xs={12}>
             
                 <Grid item xs = {3} direction="row" justify="flex-end" alignItems="center">
@@ -157,9 +157,9 @@ class Talker extends Component {
                             <MenuItem  value={"morpAPI"}>morpAPI</MenuItem>
                             <MenuItem  value={"wsdAPI"}>wsdAPI</MenuItem>
                             <MenuItem  value={"wsd_polyAPI"}>wsd_polyAPI</MenuItem>
-                            <MenuItem  value={"ner"}>ner</MenuItem>
-                            <MenuItem  value={"dparse"}>dparse</MenuItem>
-                            <MenuItem  value={"srl"}>srl</MenuItem>
+                            <MenuItem  value={"nerAPI"}>ner</MenuItem>
+                            <MenuItem  value={"dparseAPI"}>dparse</MenuItem>
+                            <MenuItem  value={"srlAPI"}>srl</MenuItem>
 
                           </Select>
                         </FormControl>

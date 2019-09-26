@@ -19,21 +19,16 @@ const useStyles = makeStyles(theme => ({
 export default function ChipsArray() {
   const classes = useStyles();
   const [chipData, setChipData] = React.useState([
-    { key: 0, label: 'Angular' },
-    { key: 1, label: 'jQuery' },
-    { key: 2, label: 'Polymer' },
-    { key: 3, label: 'React' },
-    { key: 4, label: 'Vue.js' },
+    { key: 0, label: '코스모스 + NNG' },
+    { key: 1, label: '는 + JX' },
+    { key: 2, label: '가을 + NNG' },
+    { key: 3, label: '에 + JKB' },
+    { key: 4, label: '피 + VV' },
+    { key: 5, label: '어요 + EF' },
+
   ]);
 
-  const handleDelete = chipToDelete => () => {
-    if (chipToDelete.label === 'React') {
-      alert('Why would you want to delete React?! :)');
-      return;
-    }
-
-    setChipData(chips => chips.filter(chip => chip.key !== chipToDelete.key));
-  };
+  
 
   return (
     <Paper className={classes.root}>
@@ -47,9 +42,8 @@ export default function ChipsArray() {
         return (
           <Chip
             key={data.key}
-            icon={icon}
+            //icon={icon}
             label={data.label}
-            onDelete={handleDelete(data)}
             className={classes.chip}
           />
         );
